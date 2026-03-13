@@ -7,6 +7,27 @@
     <title>installing virus!!11!</title>
 </head>
 <style>
+    body {
+        background-color: #0d0d0d;
+        color: #fff;
+        font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        text-align: center;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #ff4fff;
+        text-shadow: 0 0 10px #ff4fff;
+        margin: 0;
+    }
+
     /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
     .flip-box {
         background-color: transparent;
@@ -49,25 +70,99 @@
 
     /* Style the back side */
     .flip-box-back {
-        background-color: rgb(0, 0, 0);
-        color: white;
+        background: linear-gradient(135deg, #0d0d0d, #1a001a);
+        color: #ff4fff;
         transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .flip-box-back h2 {
+        font-size: 3rem;
+        text-shadow: 0 0 20px #ff4fff;
+        margin: 0;
+    }
+
+    .flip-box-back p {
+        font-size: 1rem;
+        color: #ccc;
+        margin: 0;
+    }
+
+    .progress-bar-wrap {
+        width: 80%;
+        background: #333;
+        border-radius: 8px;
+        height: 18px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, #ff4fff, #a020f0);
+        border-radius: 8px;
+        animation: fill 3s ease-in-out forwards;
+    }
+
+    @keyframes fill {
+        to { width: 100%; }
+    }
+
+    .status {
+        font-size: 0.8rem;
+        color: #888;
+        animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+
+    .ticker-wrap {
+        width: 500px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .ticker {
+        display: inline-block;
+        color: #ff4fff;
+        font-size: 0.9rem;
+        animation: ticker-scroll 16s linear infinite;
+    }
+
+    @keyframes ticker-scroll {
+        from { transform: translateX(100%); }
+        to   { transform: translateX(-100%); }
     }
 </style>
 
 <body>
-    <p>thank u! 😁</p>
+    <h1>thank u! 😁 ur so real for this</h1>
+    <p style="color:#aaa; margin:0;">hover over the image if u dare (no cap)</p>
     <div class="flip-box">
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 <img src="images/smile.webp" alt="smile" width="500" height="500">
             </div>
             <div class="flip-box-back">
-                <h2>goon</h2>
+                <h2>certified goon 🗿</h2>
+                <p>bro actually hovered 💀</p>
+                <p>u got that gooner ahh curiosity fr</p>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="status">installing sigma mindset...</span>
             </div>
         </div>
     </div>
-
+    <div class="ticker-wrap"><span class="ticker">💀 INSTALLING... • rizz.exe loaded • sigma_grindset.dll injected • no cap detected • gooner mode: ON • 🔥🔥🔥</span></div>
+    <p style="color:#555; font-size:0.8rem;">#installed #slay #gooner #sigma #fyp #notavirus</p>
 </body>
 
 </html>
